@@ -1,3 +1,4 @@
+/*
 const inputWords = []
 let finishLoop = false
 while (!finishLoop) {
@@ -8,5 +9,12 @@ while (!finishLoop) {
     inputWords.push(inputWord)
   }
 }
+*/
+const inputWords = ['Hello', 'Mum', 'How', 'Are', 'YOU']
 
-console.log(inputWords)
+let wordsJoinedTogether = ''
+for (const word of inputWords) {
+  wordsJoinedTogether = wordsJoinedTogether + ' ' + word
+}
+
+console.log(wordsJoinedTogether)
