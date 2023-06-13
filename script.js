@@ -12,14 +12,6 @@ while (!finishLoop) {
 */
 const inputWords = ['Hello', 'Mum', 'How', 'Are', 'YOU']
 
-let wordsJoinedTogether = ''
-let isFirstWord = true
-for (const word of inputWords) {
-  if (!isFirstWord) {
-    wordsJoinedTogether = wordsJoinedTogether + ' '
-  }
-  wordsJoinedTogether = wordsJoinedTogether + word
-  isFirstWord = false
-}
+const wordsJoinedTogether = inputWords.join(' ')
 
 console.log(wordsJoinedTogether)
