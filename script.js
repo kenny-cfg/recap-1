@@ -1,4 +1,3 @@
-/*
 const inputWords = []
 let finishLoop = false
 while (!finishLoop) {
@@ -9,8 +8,6 @@ while (!finishLoop) {
     inputWords.push(inputWord)
   }
 }
-*/
-const inputWords = ['Hello', 'Mum', 'How', 'Are', 'YOU']
 
 const wordsJoinedTogether = inputWords.join(' ')
 
