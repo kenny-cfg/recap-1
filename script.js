@@ -1,12 +1,10 @@
 const inputWords = []
-let finishLoop = false
-while (!finishLoop) {
+while (true) {
   const inputWord = prompt('Input a word (blank for finish)')
   if (inputWord === '') {
-    finishLoop = true
-  } else {
-    inputWords.push(inputWord)
+    break
   }
+  inputWords.push(inputWord)
 }
 
 const wordsJoinedTogether = inputWords.join(' ')
