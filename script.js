@@ -10,6 +10,7 @@ joinButton.addEventListener('click', joinWords)
 function submitWord() {
   const inputWord = inputBox.value
   inputWords.push(inputWord)
+  inputBox.value = ''
 }
 
 function joinWords() {
