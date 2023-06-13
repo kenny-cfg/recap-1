@@ -8,7 +8,8 @@ let inputWords = []
 submitButton.addEventListener('click', submitWord)
 joinButton.addEventListener('click', joinWords) 
 
-function submitWord() {
+function submitWord(e) {
+  e.preventDefault()
   const inputWord = inputBox.value
   inputWords.push(inputWord)
   inputBox.value = ''
